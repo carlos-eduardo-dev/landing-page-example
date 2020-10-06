@@ -135,6 +135,8 @@ html,body{
 
 	border:  none;
 	border-radius: 5px;
+
+	transition: 100ms;
 }
 
 .text-field {
@@ -191,4 +193,8 @@ html,body{
 .text-field input:focus ~ label, .text-field input:valid ~ label {
 	top: -5px;
 	color: #505050;
+}
+
+.submit-form input[type=submit]:hover {
+	background-color: #212343;
 }
