@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#logo {
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+}
+
+#logo img{
+	margin: 15px;
+}
+
+.header-content{
+	width: 100%;
+	height: 557px;
+
+	display: flex;
+
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	background-image:url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+}
+
+.header-content .information {
+
+	margin-left: 5%;
+	padding: 10px 60px;
+
+	background-color: #212343aa;
+
+	color: #DDD;
+
+	text-align: start;
+}
+
+.information {
+	font-size: 18px;
+}
+
+.information h2{
+	margin: 0 0 20px 0;
+}
+
+.information li {
+	margin: 15px 0;
+}
+
+.form-header{
+	width: 400px;
+	height: 110%;
+
+	background-color: #FFF;
+
+	position: absolute;
+	right: 25px;
+}
+
+#fieldset-form {
+	width: 100%;
+	height: 100%;
+
+	padding: 10px;
+
+	display: flex;
+	flex-direction: column;
+
+	border: #AAA 5px solid;
+
+	font-size: 18px;
+	color: #707070;
+}
+
+#fieldset-form h3 {
+	margin-bottom: 10px;
+}
+
+#fieldset-form .input-form {
+	height: 70%;
+}
+
+#fieldset-form .input-form input {
+	width: 100%;
+	height: 40px;
+
+	margin: 0;
+
+	font-size: 18px;
+	outline: none;
+
+	border: none;
+}
+
+#fieldset-form .submit-form {
+	display: flex;
+	flex-direction: column;
+
+	height: 30%;
+}
+
+#fieldset-form input[type=submit] {
+	width: 75%;
+	height: 50px;
+
+	background-color: #363a6d;
+	color: #FFF;
+	font-size: 22px;
+
+	align-self: center;
+
+	margin: auto 0;
+
+	cursor: pointer;
+}
+
+.text-field {
+	position: relative;
+
+	margin: 40px 0;
+}
+
+.text-field label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+
+	pointer-events: none;
+
+	transition: .5s;
+}
+
+.text-field span {
+	width: 100%;
+	height: 2px;
+
+	background-color: #363a6d;
+
+	position: absolute;
+	bottom: 0;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	width: 100%;
+
+	background-color: #dddddd;
+}
+
+.main-header .information {
+	margin: 0 auto;
+	padding: 25px;
+
+	width: 60%;
+
+	text-align: center;
+}
+
+.main-header .information p {
+	color: #505050;
+}
+
+.text-field input:focus ~ label, .text-field input:valid ~ label {
+	top: -5px;
+	color: #505050;
+}
