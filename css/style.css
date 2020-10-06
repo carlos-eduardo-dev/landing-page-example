@@ -71,6 +71,8 @@ html,body{
 
 	position: absolute;
 	right: 25px;
+
+	border-radius: 5px;
 }
 
 #fieldset-form {
@@ -82,10 +84,12 @@ html,body{
 	display: flex;
 	flex-direction: column;
 
-	border: #AAA 5px solid;
+	border: #AAA 2px solid;
 
 	font-size: 18px;
 	color: #707070;
+
+	border-radius: 5px;
 }
 
 #fieldset-form h3 {
@@ -115,7 +119,7 @@ html,body{
 	height: 30%;
 }
 
-#fieldset-form input[type=submit] {
+.submit-form input[type=submit] {
 	width: 75%;
 	height: 50px;
 
@@ -128,6 +132,9 @@ html,body{
 	margin: auto 0;
 
 	cursor: pointer;
+
+	border:  none;
+	border-radius: 5px;
 }
 
 .text-field {
