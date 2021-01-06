@@ -11,12 +11,14 @@
 </head>
 
 <body>
-	<header class="header-container">
-		<div id="logo">
-			<img src="/images/logo.png" alt="logo">
-		</div>
-		<div class="header-content">
-			<div class="information">
+	<header>
+		<section class="container-logo">
+			<div>
+				<img src="/images/logo.png" alt="logo">
+			</div>
+		</section>
+		<section class="content-header">
+			<div id="information-header">
 				<ul>
 					<li>
 						<p>Lorem, ipsum dolor sit amet elit. Cupiditate, dicta.</p>
@@ -29,38 +31,40 @@
 					</li>
 				</ul>
 			</div>
-
-			<form action="" class="form-header">
-				<fieldset id="fieldset-form">
-					<div class="input-form">
-						<h3>Preencha o formulário e inicie sua caminhada para virar um webmaster!</h3>
-						<div class="text-field">
-							<input type="text" name="name" id="name" required>
-							<label>Nome*</label>
-							<span></span>
+			<div id="form-header">
+				<form action="">
+					<fieldset class="fieldset-form">
+						<div class="input-block">
+							<h3>Preencha o formulário e inicie sua caminhada para virar um webmaster!</h3>
+							<div class="text-field">
+								<input type="text" name="name" id="name" required>
+								<label>Nome*</label>
+								<span></span>
+							</div>
+							<div class="text-field">
+								<input type="email" name="email" required>
+								<label>E-mail*</label>
+								<span></span>
+							</div>content-main
+							<div class="text-field">
+								<input type="tel" name="phone" id="phone" required>
+								<label>Telefone*</label>
+								<span></span>
+							</div>
+							<p>* Campos Obrigatórios</p>
 						</div>
-						<div class="text-field">
-							<input type="email" name="email" required>
-							<label>E-mail*</label>
-							<span></span>
+						<div class="btn-submit">
+							<input type="submit" value="Enviar" id="submit">
 						</div>
-						<div class="text-field">
-							<input type="tel" name="phone" id="phone" required>
-							<label>Telefone*</label>
-							<span></span>
-						</div>
-						<p>* Campos Obrigatórios</p>
-					</div>
-					<div class="submit-form">
-						<input type="submit" value="Enviar" id="submit">
-					</div>
-				</fieldset>
-			</form>
-		</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
 	</header>
-	<main class="main-container">
-		<header class="main-header">
-			<div class="information">
+
+	<main>
+		<!-- <section>
+			<div>
 				<h2>Lorem Ipsum</h2>
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos incidunt iusto fugit quaerat
@@ -71,8 +75,9 @@
 					Consequatur eius sequi cumque eum modi.
 				</p>
 			</div>
-		</header>
+		</section> -->
 	</main>
+
 </body>
 
 </html>
