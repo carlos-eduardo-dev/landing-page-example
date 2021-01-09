@@ -2,11 +2,21 @@
 	--header-bg-color:  #212343;
 	--header-content-information-bg-color: #212343aa;
 	--header-text-color: #ddd;
-	/* --header-text-color: #505050; */
 	
 	--formfield-bg-color: #ddd;
 	--formfield-border-color: #aaa;
+	--formfield-input-text-color: #707070;
 	--formfield-btn-color: #363a6d;
+	--formfield-btn-hover-color: #212343;
+	--formfield-btn-text-color: #fff;
+
+
+	--main-header-bg-color: #aaa;
+	--main-section-header-text-color: #363a6d;
+
+	--card-bg-color: #aaa;
+
+	--separator-color: #363a6d;
 
 	--body-color: #ddd;
 
@@ -27,6 +37,16 @@ html,body{
 	height: 100%;
 
 	background: var(--body-color);
+
+	scroll-behavior: smooth;
+}
+
+.separator {
+	width: 100%;
+	height: 4px;
+
+	border: none;
+	background-color: var(--separator-color);
 }
 
 /* Header css */
@@ -45,10 +65,9 @@ html,body{
     width: 100%;
     
 	display: flex;
-
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 
 	background-image:url('../images/header_bg.png');
 	background-size: cover;
@@ -86,7 +105,7 @@ html,body{
 
 
 	font-size: 1.8rem;
-	color: #707070;
+	color: var(--formfield-input-text-color);
 
 }
 
@@ -134,7 +153,7 @@ html,body{
 	height: 5rem;
 
 	background-color: var(--formfield-btn-color);
-	color: #FFF;
+	color: var(--formfield-btn-text-color);
 	font-size: 22px;
 
 	align-self: center;
@@ -179,9 +198,96 @@ html,body{
 
 .text-field input:focus ~ label, .text-field input:valid ~ label {
 	top: -5px;
-	color: #505050;
+	color:var(--formfield-input-text-color);
 }
 
 .submit-form input[type=submit]:hover {
-	background-color: #212343;
+	background-color: var(--formfield-btn-hover-color);
+}
+
+/* Main */
+
+main {
+	font-size: 1.8rem;
+}
+
+.header-main {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	background: var(--main-header-bg-color);
+
+	text-align: center;
+}
+
+#information-main {
+	margin: 2.4rem 0;
+	padding: 1rem 6rem;
+	
+	max-width: 550px;
+}
+
+#arrow-link {
+	position: absolute;
+	bottom: -40px;
+}
+
+.header-section-main {
+	margin: 48px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--main-section-header-text-color);
+	text-align: center;
+}
+
+#cards {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.card {
+	width: 300px;
+	min-height: 300px;
+
+	margin: 2.4rem;
+	padding: 1.6rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+
+	border: none;
+	border-radius: 0.5rem;
+
+	background: var(--card-bg-color);
+
+}
+
+.card-information {
+	width: 100%;
+	text-align: center;
+}
+
+.card-information h3 {
+	margin: 1.6rem 0;
+}
+
+#copy {
+	margin: 16px 0;
+
+	font-size: 1.6rem;
+	text-align: center;
+	color: #333;
 }
