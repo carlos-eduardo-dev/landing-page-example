@@ -29,6 +29,8 @@ html,body{
 	height: 100%;
 
 	background: var(--body-color);
+
+	scroll-behavior: smooth;
 }
 
 /* Header css */
@@ -195,9 +197,12 @@ main {
 }
 
 .header-main {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 
 	background: var(--main-header-bg-color);
 
@@ -205,6 +210,13 @@ main {
 }
 
 #information-main {
+	margin: 2.4rem 0;
+	padding: 1rem 6rem;
 	
 	max-width: 550px;
+}
+
+#arrow-link {
+	position: absolute;
+	bottom: -40px;
 }
