@@ -8,6 +8,8 @@
 	--formfield-border-color: #aaa;
 	--formfield-btn-color: #363a6d;
 
+	--main-header-bg-color: #aaa;
+
 	--body-color: #ddd;
 
 	font-size: 62.5%;
@@ -184,4 +186,25 @@ html,body{
 
 .submit-form input[type=submit]:hover {
 	background-color: #212343;
+}
+
+/* Main */
+
+main {
+	font-size: 1.8rem;
+}
+
+.header-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: var(--main-header-bg-color);
+
+	text-align: center;
+}
+
+#information-main {
+	
+	max-width: 550px;
 }
